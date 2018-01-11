@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="界面3：此界面使用基控制器设置只支持竖屏。下面是进入默认横屏界面的按钮" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThT-qJ-apY">
+                    <rect key="frame" x="15" y="100" width="345" height="100"/>
+                    <color key="backgroundColor" red="0.64313725489999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="R4f-CY-fPs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GMS-PB-Ext">
+                    <rect key="frame" x="15" y="285" width="345" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.68030918549999997" blue="0.38528866940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="N2d-Dr-Sel"/>
+                    </constraints>
+                    <state key="normal" title="push：开启自动转屏和支持横屏，进入界面后添加强制横屏的代码。可以实现默认横屏效果">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="enterLandPageBtnClick:" destination="-1" eventType="touchUpInside" id="v4B-m5-jQe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rPw-ov-dWH">
+                    <rect key="frame" x="15" y="360" width="345" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.68030918549999997" blue="0.38528866940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="JCV-7w-56c"/>
+                    </constraints>
+                    <state key="normal" title="Present：模态视图的方式与push不同，只设置自动转屏和默认支持横屏，无需强制横屏就可以达到默认横屏效果">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="enterLandPageBtnClick:" destination="-1" eventType="touchUpInside" id="DvN-cc-BX6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cNL-4b-6h7">
+                    <rect key="frame" x="15" y="220" width="345" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.68030918551156061" blue="0.38528866942343531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="R4I-pv-OTP"/>
+                    </constraints>
+                    <state key="normal" title="push：只设置开启自动转屏和支持横屏，但是进入后无法默认支持横屏，需要旋转后才能触发。">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="enterLandPageBtnClick:" destination="-1" eventType="touchUpInside" id="nvX-LP-bAp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ThT-qJ-apY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="6RU-F9-VmJ"/>
+                <constraint firstItem="rPw-ov-dWH" firstAttribute="trailing" secondItem="ThT-qJ-apY" secondAttribute="trailing" id="CDe-Nu-Ayd"/>
+                <constraint firstItem="ThT-qJ-apY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="J3A-3L-PZu"/>
+                <constraint firstItem="cNL-4b-6h7" firstAttribute="leading" secondItem="ThT-qJ-apY" secondAttribute="leading" id="Rqo-9t-wtm"/>
+                <constraint firstItem="GMS-PB-Ext" firstAttribute="top" secondItem="cNL-4b-6h7" secondAttribute="bottom" constant="15" id="Yo2-Iu-x5E"/>
+                <constraint firstItem="GMS-PB-Ext" firstAttribute="trailing" secondItem="ThT-qJ-apY" secondAttribute="trailing" id="h20-Yu-qA5"/>
+                <constraint firstItem="cNL-4b-6h7" firstAttribute="trailing" secondItem="ThT-qJ-apY" secondAttribute="trailing" id="hZS-21-bFo"/>
+                <constraint firstAttribute="trailing" secondItem="ThT-qJ-apY" secondAttribute="trailing" constant="15" id="hn9-mm-IWT"/>
+                <constraint firstItem="rPw-ov-dWH" firstAttribute="leading" secondItem="ThT-qJ-apY" secondAttribute="leading" id="iZG-g9-PRz"/>
+                <constraint firstItem="cNL-4b-6h7" firstAttribute="top" secondItem="ThT-qJ-apY" secondAttribute="bottom" constant="20" id="j2H-as-hH2"/>
+                <constraint firstItem="GMS-PB-Ext" firstAttribute="leading" secondItem="ThT-qJ-apY" secondAttribute="leading" id="xGM-hd-r6m"/>
+                <constraint firstItem="rPw-ov-dWH" firstAttribute="top" secondItem="GMS-PB-Ext" secondAttribute="bottom" constant="15" id="zFY-U6-L9Y"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="79.5"/>
+        </view>
+    </objects>
+</document>
